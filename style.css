@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sansita+Swashed:wght@400;600&display=swap');
 
 html{
-  background-color: rgb(240, 208, 171);
+  background-color: rgb(248, 203, 182);
   color: rgb(102, 10, 10)
 }
 
+.module {
+  --notchSize: 40px;
+  
+  clip-path: 
+    polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
+}
+
 a:link{
-color: rgb(192, 68, 37);
+color: rgb(184, 55, 23);
 border: 4px double rgb(199, 71, 62);
 padding: 15px;
 background-color: rgb(248, 189, 166);
@@ -17,7 +33,7 @@ font-style: normal;
 }
 
 a:visited{
-color: rgb(197, 40, 132);
+color: rgb(204, 67, 147);
 }
 
 a:hover{
@@ -33,7 +49,7 @@ color: rgb(121, 121, 121);
 }
 
 a:active{
-color: rgb(122, 95, 129)
+color: rgb(89, 36, 100)
 }
 
 li{
